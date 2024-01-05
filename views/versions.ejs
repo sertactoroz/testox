@@ -1,0 +1,21 @@
+<!-- views/versions.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram APK Versions</title>
+</head>
+<body>
+  <h1>Instagram APK Versions</h1>
+  <ul>
+    <% versions.forEach(version => { %>
+      <li>
+        <strong>Version ID:</strong> <%= version.versionId %><br>
+        <strong>Release Date:</strong> <%= version.releaseDate %><br>
+        <!-- Add other fields as needed -->
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>
